@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>TheTechGuys.co.za</title>
+</head>
+<body>
+    
+        <header>
+            <h1 id="title">The Tech Guys</h1>
+
+            <p id="description">
+                The Tech Guys would like to thank you for your loyalty as a customer and would appreciate your assistance in making the products and services from The Tech Experience to you a Little bit better by asking you to take the following <strong>customer satisfaction survey</strong> below.<br> <em>Thank you</em>.
+            </p>
+        </header>
+
+    <div id="container">
+        <form action="" method="post" id="survey-form">
+
+            <h2>Please fill in the below form</h2>
+
+            <div class="survey-contact">
+                <div>
+                    <label for="name" id="name-label">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Your Full name" autofocus required>
+                </div>
+                <div>
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Your Email address" required>
+                </div>
+                <div id="survey-age">
+                    <label for="age" id="number-label">Age</label>
+                    <input type="number" min="0" max="120" name="age" id="number" placeholder="16" required>
+                </div>
+            </div>    
+
+            <div class="survey-dropdown">
+                <p>What do you usually shop for?</p>
+            
+                <select name="dropdown" id="dropdown">
+                    <option value="Web design template">Web design template</option>
+                    <option value="Stock images and Icons">Stock images and Icons</option>
+                    <option value="Hardware repairs">Hardware repairs</option>
+                    <option value="Nothing Much, just browsing">Nothing Much, just browsing</option>
+                </select>
+            </div>
+
+            <div class="survey-radio">
+                <p>Would you recommend our products and services to other people?</p>
+                
+                    <label id="btn-radio"><input type="radio" name="btn-radio" value="Yes">Yes, Absolutely!</label>
+        
+                    <label id="btn-radio"><Input type="radio" name="btn-radio" value="Maybe">Maybe, Depends on what they need.</label>
+                    
+                    <label id="btn-radio"><Input type="radio" name="btn-radio" value="No, Not at all.">No, Not at all.</label>
+            </div>
+            
+            <div class="survey-checkbox">
+
+                <p>Which products and services have you used before?</p>
+
+                <label id="check" for="web-design">
+                    <input  type="checkbox" name="web-design" value="Web Design services">Web Design services
+                </label>
+
+                <label id="check" for="web-design">
+                    <input type="checkbox" name="web-design" value="Hardware and Sofware repairs">Hardware and Sofware repairs
+                </label>
+
+                <label id="check" for="web-design">
+                    <input type="checkbox" name="web-design" value="Tech accessory Shop">Tech accessory Shop
+                </label>
+                <label id="check" for="web-design">
+                    <input type="checkbox" name="web-design" value="Coding Courses (Elearning)">Coding Courses (Elearning)
+                </label>
+            </div>
+
+            <div id="comments">
+                <p>Want to see a change? Tell us about it. We are open to your suggestions and critisism. We would love to here from you.</p>
+
+                <textarea cols="30" rows="10" placeholder="Type your comments here">
+
+                </textarea>
+
+                <button id="submit">Submit</button>
+            </div>  
+        </form>
+    </div>
+    
+</body>
+</html>
