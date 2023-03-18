@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+   background-color:beige; 
+   color:#000;
+   font-family: 'Poppins', sans-serif;
+  }
+  
+  
+  #header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height:20%;
+    top: 0;
+    left: 0;
+    background-color: #F8E9A1; 
+    font-size: 20px;
+  }
+
+
+
+  main {
+    margin-top: 200px;
+  }
+  
+  #nav-bar ul a li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 0 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    color: #F76C6C;
+  }
+  
+    #nav-bar ul a:hover li{
+    color: #f76c6ccb;
+  }
+  
+  h2, h3,h4{
+    font-family: 'Poppins', sans-serif;
+    color: #F76C6C;
+    font-weight: 600;
+    font-size: 25px;
+    margin: 0 0 10px 15px;
+  }
+  
+  #blender-img{
+    display: block;
+    margin: 100px auto 75px;
+    border-radius: 20px;
+    width: 40%;
+    box-shadow: 0 0 30px 1px rgba(0,0,0, .5);
+  }
+  
+  p{
+    margin: 0 0 15px 15px;
+    line-height: 1.4;
+    font-size: 17px
+  }
+
+  #get-yours {
+    text-align: center;
+  }
+  
+  #specs {
+    margin: 0 0 15px 30px;
+    line-height: 1.4;
+    font-size: 17px
+  }
+  
+  iframe{
+    display: flex;
+    margin: 0 auto 20px;
+    width: 60%;
+    box-shadow: 0 0 30px 1px rgba(0,0,0, .5);
+    border: none;
+  }
+  
+  #product-order{
+    text-align: center;
+    font-size: 35px;
+  }
+  
+  #exclaim{
+    color: #F76C6C;
+    font-size: 25px;
+  }
+  
+  label{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: fantasy, sans;
+  }
+
+  #name {
+    display: block;
+    margin: 0 auto 15px;
+    width: 30%;
+    height: 30px;
+    border-radius: 7px;
+    
+  }
+  
+  
+  #email{
+    display: block;
+    margin: 0 auto 15px;
+    width: 30%;
+    height: 30px;
+    border-radius: 7px;
+    padding-left: 5px;
+  }
+  
+  #submit{
+    display: block;
+    margin: 0 auto 15px;
+    width: 10%;
+    border-radius: 7px;
+    color: green;
+    height: 30px;
+    font-weight: bold;
+  }
+  
+  @media screen and (max-width: 600px){
+  
+    #header{ 
+    font-size: 12px;
+    display: block;
+    text-align: center;
+    height: 30%;
+  }
+  
+  #nav-bar ul a li{
+    display: inline-block;
+    padding: 5px 30px;
+  }
+  
+  h2, h3,h4{
+    
+    font-size: 15px;
+    margin: 0 0 10px 15px;
+  }
+  
+  #blender-img{
+    margin: 135px auto 35px;
+    box-shadow: 0 0 20px 1px rgba(0,0,0, .3);
+    }
+  
+    p{
+    font-size: 12px;
+    }
+  
+    #specs {
+    font-size: 12px
+  }
+  
+  iframe{
+    width: 80%;
+    height: 45%;
+    box-shadow: 0 0 40px 1px rgba(0,0,0, .7);
+  }
+  
+  #product-order{
+    text-align: center;
+    font-size: 25px;
+  }
+  
+  #exclaim{
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  label{
+    font-weight: normal;
+  }
+
+  
+  #email{
+    margin: 0 auto 15px;
+    width: 50%;
+     
+  }
+  
+  #submit{
+    width: 20%;
+    border-radius: 7px;
+  }
+  
+  }
