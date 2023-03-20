@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+
+    <body>
+
+        <div id="wrapper">
+            <nav id="navbar">
+                <h1>Guide to Flexbox</h1>
+                <header>
+                    <ul>
+                        <li><a href="#Display" class="nav-link">Display</a></li>
+                        <li><a href="#Flex-direction" class="nav-link">flex-direction</a></li>
+                        <li><a href="#flex-wrap" class="nav-link">flex-wrap</a></li>
+                        <li><a href="#flex-flow" class="nav-link">flex-flow</a></li>
+                        <li><a href="#justify-content" class="nav-link">justify-content</a></li>
+                        <li><a href="#gap,_row-gap,_column-gap" class="nav-link">gap, row-gap, column-gap</a></li>
+                    </ul>
+                </header>
+            </nav>
+        </div>
+
+        <main id="main-doc">
+
+
+            <header>
+                <h2>Flexbox properties</h2>
+            </header>
+        
+            <h3>Properties for the Parent (flex container)</h3>
+    
+
+            <section class="main-section" id="Display">
+                <header>
+                    <h4>Display</h4>
+                </header>
+
+                <article>
+
+                    <p>
+                        This defines a <em>flex container; inline or block</em> depending on the given value.
+                        It enables a flex context for all its direct children. 
+                    </p>
+
+                    <div id="code">
+
+                        <h5>Code Snippet:</h5>
+                        <pre>
+                            <code>
+                                <b>
+                                    1   .flex-container {
+                                    2           display: flex;
+                                    3
+                                    4   }
+                                </b>
+                            </code>
+                        </pre>
+                    </div>
+
+                    <strong>
+                        <p>
+                            Note that CSS columns have no effect on a flex container.
+                        </p>
+                    </strong>
+                </article>
+            </section>
+
+            <section class="main-section" id="Flex-direction">
+                <header>
+                    <h4>flex-direction</h4>
+                </header>
+
+                <article>
+                    <p>
+                       This establishes the main-axis, thus defining the direction flex items are placed in the flex container.
+                       Flexbox is (aside from optional wrapping) a single-direction layout concept. 
+                       Think of flex items as primarily laying out either in <b>horizontal rows</b> or <b>vertical columns</b>.
+                    </p>
+
+                    <div id="code">
+
+                        <h5>Code Snippet:</h5>
+                        <pre>
+                            <code>
+                                <b>
+                                    1   .flex-container {
+                                    2           display: flex;
+                                    3           flex-direction: row-reverse;
+                                    4
+                                    5    }
+                                </b>
+                            </code>
+                        </pre>
+                    </div>
+
+                    <p>
+                        <ul>
+                            <li>row (default): left to right in ltr; right to left in rtl</li>
+                            <li>row-reverse: right to left in ltr; left to right in rtl</li>
+                            <li>column: same as row but top to bottom</li>
+                            <li>column-reverse: same as row-reverse but bottom to top</li>
+                        </ul>
+                    </p>
+                </article>
+
+            </section>
+
+            <section class="main-section" id="flex-wrap">
+                <header>
+                    <h4>flex-wrap</h4>
+                </header>
+
+                <article>
+                    <p>
+                        By default, flex items will all try to fit onto one line. 
+                        You can change that and allow the items to wrap as needed with this property.
+                    </p>
+
+                    <div id="code">
+
+                        <h5>Code Snippet:</h5>
+                        <pre>
+                            <code>
+                                <b>
+                                    1   .flex-container {
+                                    2        flex-wrap: nowwrap;
+                                    3
+                                    4   }
+                                </b>
+                            </code>
+                        </pre>
+                    </div>
+
+                    <p>
+                        <ul>
+                            <li>nowrap (default): all flex items will be on one line</li>
+                            <li>wrap: flex items will wrap onto multiple lines, from top to bottom.</li>
+                            <li>wrap-reverse: flex items will wrap onto multiple lines from bottom to top.</li> 
+                        </ul>
+                    </p>
+                </article>
+            </section>
+            
+            <section class="main-section" id="flex-flow">
+                <header>
+                    <h4>flex-flow</h4>
+                </header>
+
+                <article>
+                    <p>
+                        This is a shorthand for the flex-direction and flex-wrap properties, which together define the flex containers main and cross axes. 
+                        The default value is row nowrap.
+                    </p>
+
+                    <div id="code">
+
+                        <h5>Code Snippet:</h5>
+                        <pre>
+                            <code>
+                                <b>
+                                    1   .flex-container {
+                                    2       display: flex;
+                                    3       flex-flow: row wrap;
+                                    4
+                                    6   }
+                                </b>
+                            </code>
+                        </pre>
+                    </div>
+
+                    <p>
+                        If the elements are not flexible items, the flex-flow property has no effect.
+                    </p>
+                </article>
+            </section>
+
+            <section class="main-section" id="justify-content">
+                <header>
+                    <h4>justify-content</h4>
+                </header>
+
+                <article>
+                    <p>
+                        This defines the alignment along the main axis. 
+                        It helps distribute extra free space leftover when either all the flex items on a line are inflexible, 
+                        or are flexible but have reached their maximum size. 
+                        It also exerts some control over the alignment of items when they overflow the line.
+                    </p>
+
+                    <div id="code">
+
+                        <h5>Code Snippet:</h5>
+                        <pre>
+                            <code>
+                                <b>
+                                    1   .flex-container {
+                                    2       display: flex;
+                                    3       justify-content: right;
+                                    4
+                                    5   }
+                                </b>
+                            </code>
+                        </pre>
+                    </div>
+
+                    <p>
+                        <ul>
+                            <li>center: items are centered along the line</li>
+                            <li>space-between: items are evenly distributed in the line; first item is on the start line, last item on the end line.</li>
+                            <li>space-around: items are evenly distributed in the line with equal space around them.<br> Note that visually the spaces aren’t equal, since all the items have equal space on both sides.</li>
+                            <li>space-evenly: items are distributed so that the spacing between any two items (and the space to the edges) is equal.</li>
+                        </ul>
+                    </p>
+                </article>
+            </section>
+
+            <section class="main-section" id="gap,_row-gap,_column-gap">
+                <header>
+                    <h4>gap, row-gap, column-gap</h4>
+                </header>
+
+                <article>
+                    <p>
+                        The gap property explicitly controls the space between flex items. 
+                        It applies that spacing only between items not on the outer edges.
+                    </p>
+
+                    <div id="code">
+
+                        <h5>Code Snippet:</h5>
+                        <pre>
+                            <code>
+                                <b>
+                                    1   .flex-container {
+                                    2       display: flex;
+                                    3       gap: 2px;
+                                    4
+                                    5   }
+                                </b>
+                            </code>
+                        </pre>
+                    </div>
+                
+                    <p>
+                        The behavior could be thought of as a minimum gutter, as if the gutter is bigger somehow 
+                        (because of something like justify-content:space-between;) 
+                        then the gap will only take effect if that space would end up smaller.
+                        It is not exclusively for flexbox, gap works in grid and multi-column layout as well.
+                    </p>
+                </article>
+            </section>
+
+            <p>
+                <articles>
+                  click <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-basics-and-terminology" target="_blank"><strong>here</strong></a> for the full guide.
+                </article>
+            </p>
+
+        </main>
+    </body>
+
+</html>
